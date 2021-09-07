@@ -17,7 +17,7 @@ impl Processor {
 
     match instruction {
       EscrowInstruction::InitEscrow { amount } => {
-        msg!("Instruction: InitEscrow")
+        msg!("Instruction: InitEscrow");
         Self::process_init_escrow(accounts, amount, program_id)
       }
     }
